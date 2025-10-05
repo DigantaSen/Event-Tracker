@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6 - Event Tracker | 2025201050</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Event Tracking System</h1>
+            <p class="subtitle">Student ID: 2025201050 | Question 6</p>
+        </header>
+
+        <div class="info-box">
+            <h2>📊 Instructions</h2>
+            <p>This page demonstrates comprehensive event tracking. All user interactions are captured and logged to the console.</p>
+            <p><strong>Open Developer Console (F12)</strong> to see tracked events in real-time!</p>
+        </div>
+
+        <div class="demo-section">
+            <h2>🖱️ Interactive Elements</h2>
+            
+            <div class="demo-grid">
+                <!-- Buttons -->
+                <div class="demo-card">
+                    <h3>Buttons</h3>
+                    <button class="btn btn-primary" data-action="submit">Submit Button</button>
+                    <button class="btn btn-secondary" data-action="cancel">Cancel Button</button>
+                    <button class="btn btn-success" data-action="confirm">Confirm Button</button>
+                </div>
+
+                <!-- Links -->
+                <div class="demo-card">
+                    <h3>Links</h3>
+                    <a href="#section1" class="link">Navigate to Section 1</a>
+                    <a href="#section2" class="link">Navigate to Section 2</a>
+                    <a href="https://example.com" class="link" target="_blank">External Link</a>
+                </div>
+
+                <!-- Images -->
+                <div class="demo-card">
+                    <h3>Images</h3>
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect fill='%234CAF50' width='100' height='100'/%3E%3Ctext x='50' y='55' font-size='14' text-anchor='middle' fill='white'%3EImage 1%3C/text%3E%3C/svg%3E" alt="Sample Image 1" class="demo-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect fill='%232196F3' width='100' height='100'/%3E%3Ctext x='50' y='55' font-size='14' text-anchor='middle' fill='white'%3EImage 2%3C/text%3E%3C/svg%3E" alt="Sample Image 2" class="demo-image">
+                </div>
+
+                <!-- Form Inputs -->
+                <div class="demo-card">
+                    <h3>Form Inputs</h3>
+                    <input type="text" placeholder="Text input" class="input-field">
+                    <input type="email" placeholder="Email input" class="input-field">
+                    <textarea placeholder="Textarea" class="input-field"></textarea>
+                </div>
+
+                <!-- Checkboxes & Radio -->
+                <div class="demo-card">
+                    <h3>Checkboxes</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="option" value="option1"> Option 1
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="option" value="option2"> Option 2
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="option" value="option3"> Option 3
+                    </label>
+                </div>
+
+                <!-- Dropdown -->
+                <div class="demo-card">
+                    <h3>Dropdown</h3>
+                    <select class="dropdown" name="category">
+                        <option value="">Select category...</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="books">Books</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="food">Food</option>
+                    </select>
+                </div>
+
+                <!-- Divs with classes -->
+                <div class="demo-card clickable-div" data-info="card1">
+                    <h3>Clickable Div 1</h3>
+                    <p>Click this entire card to trigger an event</p>
+                </div>
+
+                <div class="demo-card clickable-div" data-info="card2">
+                    <h3>Clickable Div 2</h3>
+                    <p>This card also tracks clicks</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Log Display -->
+        <div class="log-section">
+            <h2>📋 Recent Events (Last 10)</h2>
+            <div id="eventLog" class="event-log">
+                <p class="log-placeholder">Events will appear here...</p>
+            </div>
+            <button id="clearLog" class="btn btn-secondary">Clear Log</button>
+        </div>
+
+        <!-- Sections for navigation -->
+        <div id="section1" class="section-marker">
+            <h3>Section 1</h3>
+            <p>This is section 1 content. Clicking the link above navigates here.</p>
+        </div>
+
+        <div id="section2" class="section-marker">
+            <h3>Section 2</h3>
+            <p>This is section 2 content. Another navigation target.</p>
+        </div>
+    </div>
+
+    <script src="eventTracker.js"></script>
+</body>
+</html>
