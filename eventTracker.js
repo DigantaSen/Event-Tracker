@@ -1,15 +1,3 @@
-/**
- * Q6: Event Tracker Implementation
- * Student ID: 2025201050
- * 
- * This script captures all click events and page views performed by a user
- * across HTML tags and CSS Objects, printing output to the browser console.
- */
-
-// ============================================================================
-// EVENT TRACKING SYSTEM
-// ============================================================================
-
 class EventTracker {
     constructor() {
         this.eventCount = 0;
@@ -18,9 +6,6 @@ class EventTracker {
         this.init();
     }
 
-    /**
-     * Initialize the event tracker
-     */
     init() {
         console.log('%c🎯 Event Tracker Initialized', 'color: #4CAF50; font-size: 16px; font-weight: bold;');
         console.log('%c━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', 'color: #4CAF50;');
